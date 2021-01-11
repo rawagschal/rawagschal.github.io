@@ -1,54 +1,35 @@
 import React, { useState } from 'react';
 
-function Portfolio({ currentCategory }) {
-    const { name, description } = currentCategory;
+function Portfolio({currentProject}) {
+    // const { name, description } = currentProject;
 
-    const [photos] = useState([
+    const [projects] = useState([
         {
-          name: 'Grocery aisle',
-          category: 'commercial',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+          name: 'Spaced Out',
+          description: 'HTML/Bootstrap/JS',
+          deployedURL: 'https://rawagschal.github.io/spaced-out/',
+          githubURL: 'https://github.com/rawagschal/spaced-out',
         },
         {
-          name: 'Grocery booth',
-          category: 'commercial',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+          name: 'Notetakr',
+          description: 'Express.js',
+          deployedURL: 'https://arcane-wave-64105.herokuapp.com/',
+          githubURL: 'https://github.com/rawagschal/notetakr',
         },
-        {
-          name: 'Building exterior',
-          category: 'commercial',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-            name: 'Grocery aisle',
-            category: 'commercial',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-          },
-          {
-            name: 'Grocery booth',
-            category: 'commercial',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-          },
-          {
-            name: 'Building exterior',
-            category: 'commercial',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-          },
-        ]);
+    ]);
 
     
 
     return (
         <section>
-        <h1 data-testid="h1tag">{(name)}</h1>
-        <p>{description}</p>
+        <h1>{(projects.name)}</h1>
+        <p>{projects.description}</p>
         <div className="flex-row">
-                {photos.map((image, i) => (
+                {projects.map((image, i) => (
                     <img
-                        src={require(`../../assets/small/${category}/${i}.jpg`).default}
+                        src={require(`../../assets/projects/${i}.png`).default}
                         alt={image.name}
                         className="img-thumbnail mx-1"
-                        onClick={() => toggleModal(image, i)}
                         key={image.name}
                     />
                 ))}
