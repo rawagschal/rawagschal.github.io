@@ -6,7 +6,23 @@ import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
+  // const [contactSelected, setContactSelected] = useState(false);
+  // const [aboutSelected, setAboutSelected] = useState(false);
+  
+  const renderPage = () => {
+    switch (currentCategory) {
+      // case 'Resume':
+      //   return <Resume />;
+      case 'Portfolio':
+        return <Portfolio />;
+      case 'Contact':
+        return <Contact />;
+      default:
+        return <About />;
+    }
+  };
+
+  
   const [categories] = useState([
     {
         name: "About Me",
@@ -22,19 +38,25 @@ function App() {
     },
 ]);
 
-const [currentCategory, setCurrentCategory] = useState(categories[0]);
+// const [currentCategory, setCurrentCategory] = useState(categories[0]);
+const [currentCategory, handlePageChange] = useState('About');
+
+
 
   return (
     <div>
       <Header
         categories={categories}
-        setCurrentCategory={setCurrentCategory}
+        // setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
+        // contactSelected={contactSelected}
+        // setContactSelected={setContactSelected}
+        // aboutSelected={aboutSelected}
+        // setAboutSelected={setAboutSelected}
+        handlePageChange={handlePageChange}
       ></Header>
       <main>
-        {!contactSelected ? (
+        {/* {!contactSelected ? (
           <>
             <Portfolio></Portfolio>
             <About></About>
@@ -42,7 +64,15 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
         ) : (
           <Contact></Contact>
         )} 
-        
+        {!aboutSelected ? (
+          <>
+            <Portfolio></Portfolio>
+            <Contact></Contact>
+          </>
+        ) : (
+            <About></About>
+        )}  */}
+        <div>{renderPage(currentCategory)}</div>
       </main>
     </div>
   );

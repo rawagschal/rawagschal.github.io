@@ -1,12 +1,15 @@
 import React from 'react';
 
+
 function Header(props) {
     const {
         categories = [],
-        setCurrentCategory,
+        // setCurrentCategory,
         currentCategory,
-        contactSelected,
-        setContactSelected
+        // contactSelected,
+        // setContactSelected,
+        // aboutSelected,
+        // setAboutSelected
     } = props;
 
     return (
@@ -18,20 +21,23 @@ function Header(props) {
             </h2>
             <nav>
                 <ul className="flex-row">
-                    <li className={`mx-2 ${contactSelected && 'navActive'}`}> 
+                    {/* <li className={`mx-2 ${contactSelected && 'navActive'}`}> 
                         <span onClick={() => setContactSelected(true)} >Contact</span>
                     </li>
+                    <li className={`mx-2 ${aboutSelected && 'navActive'}`}> 
+                        <span onClick={() => setAboutSelected(true)} >About</span>
+                    </li> */}
                     {categories.map((category) => (
                         <li 
                             className={`mx-1 ${
-                                currentCategory.name === category.name && !contactSelected && 'navActive'
+                                currentCategory.name === category.name && 'navActive'
                                 }`} 
                             key={category.name}
                         >
                             <span 
-                                onClick={() => {
-                                    setCurrentCategory(category)
-                                    setContactSelected(false);
+                                onClick={() => { props.handlePageChange(category)
+                                    // setCurrentCategory(category)
+                                    // setContactSelected(false);
                                 }}
                             >
                                 {(category.name)}
