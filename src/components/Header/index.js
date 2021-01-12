@@ -1,16 +1,30 @@
 import React from 'react';
 
 
-function Header(props) {
-    const {
-        categories = [],
-        // setCurrentCategory,
-        currentCategory,
-        // contactSelected,
-        // setContactSelected,
-        // aboutSelected,
-        // setAboutSelected
-    } = props;
+function Header() {
+    // const {
+    //     categories = [],
+    //     // setCurrentCategory,
+    //     currentCategory,
+    //     // contactSelected,
+    //     // setContactSelected,
+    //     // aboutSelected,
+    //     // setAboutSelected
+    // } = props;
+    const categories = [
+        {
+            name: "About Me",
+            description: " ",
+        },
+        {
+            name: "Portfolio", 
+            description: "Projects I have worked on",
+        },
+        {
+            name: "Resume",
+            description: " ",
+        },
+    ];
 
     return (
         <header className="flex-row px-1">

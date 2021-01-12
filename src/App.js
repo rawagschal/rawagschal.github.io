@@ -23,30 +23,29 @@ function App() {
   };
 
   
-  const [categories] = useState([
-    {
-        name: "About Me",
-        description: " ",
-    },
-    {
-        name: "Portfolio", 
-        description: "Projects I have worked on",
-    },
-    {
-        name: "Resume",
-        description: " ",
-    },
-]);
+//   const [categories] = useState([
+//     {
+//         name: "About Me",
+//         description: " ",
+//     },
+//     {
+//         name: "Portfolio", 
+//         description: "Projects I have worked on",
+//     },
+//     {
+//         name: "Resume",
+//         description: " ",
+//     },
+// ]);
 
 // const [currentCategory, setCurrentCategory] = useState(categories[0]);
-const [currentCategory, handlePageChange] = useState('About');
-
+const [currentCategory, handlePageChange] = useState();
 
 
   return (
     <div>
       <Header
-        categories={categories}
+        // categories={categories}
         // setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
         // contactSelected={contactSelected}
