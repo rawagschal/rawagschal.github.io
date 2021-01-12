@@ -4,6 +4,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
   // const [contactSelected, setContactSelected] = useState(false);
@@ -43,37 +44,29 @@ const [currentCategory, handlePageChange] = useState();
 
 
   return (
+    <Router>
     <div>
       <Header
         // categories={categories}
         // setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
+        // currentCategory={currentCategory}
         // contactSelected={contactSelected}
         // setContactSelected={setContactSelected}
         // aboutSelected={aboutSelected}
         // setAboutSelected={setAboutSelected}
-        handlePageChange={handlePageChange}
+        // handlePageChange={handlePageChange}
       ></Header>
       <main>
-        {/* {!contactSelected ? (
-          <>
-            <Portfolio></Portfolio>
-            <About></About>
-          </>
-        ) : (
-          <Contact></Contact>
-        )} 
-        {!aboutSelected ? (
-          <>
-            <Portfolio></Portfolio>
-            <Contact></Contact>
-          </>
-        ) : (
-            <About></About>
-        )}  */}
-        <div>{renderPage(currentCategory)}</div>
+        <Switch>
+          <Route exact path="/" component={About} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/contact" component={Contact} />
+          {/* <Route exact path="/resume" component={Resume} /> */}
+          <div>{renderPage(currentCategory)}</div>
+        </Switch>
       </main>
     </div>
+    </Router>
   );
 }
 

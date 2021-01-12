@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 function Header() {
@@ -11,20 +12,20 @@ function Header() {
     //     // aboutSelected,
     //     // setAboutSelected
     // } = props;
-    const categories = [
-        {
-            name: "About Me",
-            description: " ",
-        },
-        {
-            name: "Portfolio", 
-            description: "Projects I have worked on",
-        },
-        {
-            name: "Resume",
-            description: " ",
-        },
-    ];
+    // const categories = [
+    //     {
+    //         name: "About Me",
+    //         description: " ",
+    //     },
+    //     {
+    //         name: "Portfolio", 
+    //         description: "Projects I have worked on",
+    //     },
+    //     {
+    //         name: "Resume",
+    //         description: " ",
+    //     },
+    // ];
 
     return (
         <header className="flex-row px-1">
@@ -35,29 +36,18 @@ function Header() {
             </h2>
             <nav>
                 <ul className="flex-row">
-                    {/* <li className={`mx-2 ${contactSelected && 'navActive'}`}> 
-                        <span onClick={() => setContactSelected(true)} >Contact</span>
+                    <li className={`mx-2`}> 
+                        <Link to="/contact">Contact</Link>
                     </li>
-                    <li className={`mx-2 ${aboutSelected && 'navActive'}`}> 
-                        <span onClick={() => setAboutSelected(true)} >About</span>
-                    </li> */}
-                    {categories.map((category) => (
-                        <li 
-                            className={`mx-1 ${
-                                currentCategory.name === category.name && 'navActive'
-                                }`} 
-                            key={category.name}
-                        >
-                            <span 
-                                onClick={() => { props.handlePageChange(category)
-                                    // setCurrentCategory(category)
-                                    // setContactSelected(false);
-                                }}
-                            >
-                                {(category.name)}
-                            </span>
-                        </li>
-                    ))}
+                    <li className={`mx-2`}> 
+                        <Link to="/about">About</Link>
+                    </li>
+                    <li className={`mx-2`}> 
+                        <Link to="/Resume">Resume</Link>
+                    </li>
+                    <li className={`mx-2`}> 
+                        <Link to="/portfolio">Portfolio</Link>
+                    </li>
                 </ul>
             </nav>
         </header>
