@@ -11,7 +11,7 @@ function App() {
   // const [aboutSelected, setAboutSelected] = useState(false);
   
   const renderPage = () => {
-    switch (currentCategory) {
+    switch (handlePageChange) {
       // case 'Resume':
       //   return <Resume />;
       case 'Portfolio':
