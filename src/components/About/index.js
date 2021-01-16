@@ -1,11 +1,14 @@
-import coverImage from "../../assets/about-me.jpg";
+import aboutImage from "../../assets/about-me.jpg";
 import React from 'react';
 
 function About() {
     return (
         <section className="my-5">
             <h1 id="about">About Rachel</h1>
-            <img src={coverImage} className="my-2" style={{ width: "100% "}} alt="cover" />
+            <p> Rachel is a junior web developer learning to share beautiful and useful information
+                through code. 
+            </p>
+            <img src={aboutImage} className="my-2" style={{ width: "45% "}} alt="Rachel Wagschal on her graduation day from the University of Oregon in June 2019." />
         </section>
     );
 }

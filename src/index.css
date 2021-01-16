@@ -5,12 +5,11 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #606C38;
-  --secondary: #588157;
-  --tertiary: #FF6B6B;
-  --light: #FEFAE0;
-  --dark: #283618;
-  --darker: blue;
+  --primary: #8AC926  ;
+  --secondary: #FFCA3A;
+  --tertiary: #FF595E;
+  --dark: #242423;
+  --bone: #fffcf2;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -34,9 +33,9 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--light);
-  color: var(--dark);
-  font-family: 'Roboto', sans-serif;
+  background: var(--bone);
+  color: var(--body-text);
+  font-family: 'Helvetica', sans-serif;
 
 }
 
@@ -46,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
@@ -82,7 +81,7 @@ p {
 }
 
 a {
-  color: var(--tertiary);
+  color: var(--bright-green);
   text-decoration: none;
   font-weight: bold;
 }
@@ -92,11 +91,15 @@ a:hover {
 }
 
 header {
-  background: var(--light);
+  background: var(--bone);
 }
 
 header a {
-  color: var(--dark);
+  color: var(--primary);
+}
+
+header ul li a.active {
+  color: var(--secondary);
 }
 
 button {
@@ -150,12 +153,11 @@ li {
   list-style: none;
 }
 
-nav a:hover {
-  text-decoration: none;
-}
 
-nav  li {
-  cursor: pointer;
+nav a:active {
+  color: #FFCA3A;
+  text-decoration: line-through;
+
 }
 
 textarea {
@@ -208,6 +210,7 @@ textarea {
 .my-5 {
   margin-top: var(--spacing-five);
   margin-bottom: var(--spacing-five);
+  text-align: center;
 }
 
 .px-1 {
@@ -291,5 +294,5 @@ a {
 }
 
 .navActive {
-  color: var(--tertiary);
+  color: var(--bright-green);
 }
