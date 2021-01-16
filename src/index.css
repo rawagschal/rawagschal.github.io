@@ -154,7 +154,7 @@ li {
 }
 
 
-nav a:active {
+nav Link:active {
   color: #FFCA3A;
   text-decoration: line-through;
 
