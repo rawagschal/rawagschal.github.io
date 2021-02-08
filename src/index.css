@@ -33,7 +33,6 @@ body {
   font-weight: 600;
   line-height: 1.5;
   font-size: 18px;
-  letter-spacing: .1em;
   background: var(--bone);
   color: var(--body-text);
   font-family: 'Helvetica', sans-serif;
