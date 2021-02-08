@@ -5,6 +5,7 @@ main {
   padding: 50px 30px;
 }
 :root {
+  display: flex;
   --primary: #8AC926  ;
   --secondary: #FFCA3A;
   --tertiary: #FF595E;
@@ -295,4 +296,20 @@ a {
 
 .navActive {
   color: var(--bright-green);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.deployed-link {
+  margin-right: 2rem;
+  padding: 0;
+}
+
+.repo-link {
+  margin-right: 2rem;
+  padding: 0;
 }
