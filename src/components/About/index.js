@@ -1,4 +1,4 @@
-import aboutImage from "../../assets/about-me.jpg";
+import aboutImage from "../../assets/img/about-me.jpg";
 import React from 'react';
 
 function About() {

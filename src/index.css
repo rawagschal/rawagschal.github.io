@@ -96,14 +96,27 @@ header {
   margin: .5rem;
 }
 
-ul.nav-items {
+ul.footer-items {
+  justify-content: center;
+  padding: 0;
+}
+
+ul {
   display: flex;
   flex-direction: row;
   margin: 0;
 }
 
-.nav-items li {
+.nav-items li, .footer-items li {
   margin: .5rem
+}
+
+.li-logo, .gh-logo {
+  max-width: 2rem;
+}
+
+.so-logo {
+  max-width: 2.5rem;
 }
 
 .nav-items li:hover {
