@@ -1,57 +1,55 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
+export const pages = [
+        {
+            id: "homepage",
+            name: "About"
+        },
+        {
+            id: "portfolio", 
+            name: "Portfolio",
+        },
+        {
+            id: "resume",
+            name: "Resume"
+        },
+        {
+            id: "contact",
+            name: "Contact"
+        }
+    ];
 
-function Header() {
-    // const {
-    //     categories = [],
-    //     // setCurrentCategory,
-    //     currentCategory,
-    //     // contactSelected,
-    //     // setContactSelected,
-    //     // aboutSelected,
-    //     // setAboutSelected
-    // } = props;
-    // const categories = [
-    //     {
-    //         name: "About Me",
-    //         description: " ",
-    //     },
-    //     {
-    //         name: "Portfolio", 
-    //         description: "Projects I have worked on",
-    //     },
-    //     {
-    //         name: "Resume",
-    //         description: " ",
-    //     },
-    // ];
+function Header({ currentPage, setCurrentPage }) {
+   
+   function getClassName(page) {
+        return page === currentPage ? 'active' : '';
+    }
     
     return (
-        <header className="flex-row px-1">
+        <header className="header-conatiner">
             <h2>
-                <a href="/">
+                <a href="/" className="site-title">
                     Rachel Wagschal
                 </a>
             </h2>
             <nav>
-                <ul className="flex-row">
-                    <li className={`mx-2`}> 
-                        <Link to="/contact">Contact</Link>
-                    </li>
-                    <li className={`mx-2`}> 
-                        <Link to="/about">About</Link>
-                    </li>
-                    <li className={`mx-2`}> 
-                        <Link to="/Resume">Resume</Link>
-                    </li>
-                    <li className={`mx-2`}> 
-                        <Link to="/portfolio">Portfolio</Link>
-                    </li>
+                <ul className="nav-items">
+                    {
+                        pages.map((page) => (
+                            <li key={page.id} className={getClassName(page.id)} 
+                                onClick={() => {
+                                    setCurrentPage(page.id);
+                                    document.title = page.name;
+                                }}
+                            >
+                                {page.name}
+                            </li>
+                        ))
+                    }
                 </ul>
             </nav>
         </header>
-    );
+    )
 }
 
 export default Header;

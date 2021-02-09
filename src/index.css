@@ -30,12 +30,11 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-weight: 600;
   line-height: 1.5;
   font-size: 18px;
   background: var(--bone);
   color: var(--body-text);
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Roboto-Mono', sans-serif;
 
 }
 
@@ -45,8 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Helvetica', sans-serif;
-  font-weight: 500;
+  font-family: 'Roboto-Mono', sans-serif;
   margin: 5px 0;
   line-height: 1.25;
 }
@@ -81,25 +79,40 @@ p {
 }
 
 a {
-  color: var(--bright-green);
+  color: var(--primary);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: line-through ;
 }
 
 header {
   background: var(--bone);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: .5rem;
 }
 
-header a {
+ul.nav-items {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.nav-items li {
+  margin: .5rem
+}
+
+.nav-items li:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.nav-items li.active {
   color: var(--primary);
-}
-
-header ul li a.active {
-  color: var(--secondary);
 }
 
 button {
@@ -153,12 +166,6 @@ li {
   list-style: none;
 }
 
-
-nav Link:active {
-  color: #FFCA3A;
-  text-decoration: line-through;
-
-}
 
 textarea {
 	width: 600px;
@@ -283,19 +290,6 @@ button {
 	padding: 10px 15px;	
 }
 
-a {
-	border-radius: 5px;
-	color: var(--primary);
-	font-weight: 600;
-	padding: 2px 4px;
-	margin-left: -2px;
-	margin-right: -2px;
-	
-}
-
-.navActive {
-  color: var(--bright-green);
-}
 
 .project-header {
   display: flex;

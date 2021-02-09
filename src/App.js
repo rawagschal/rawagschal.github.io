@@ -1,74 +1,53 @@
 import React, { useState } from 'react';
-import './App.css';
-import Header from './components/Header';
+import Header, { pages } from './components/Header';
 import About from './components/About';
+import Resume from './components/Resume';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
 
 function App() {
-  // const [contactSelected, setContactSelected] = useState(false);
-  // const [aboutSelected, setAboutSelected] = useState(false);
   
-  const renderPage = () => {
-    switch (handlePageChange) {
-      // case 'Resume':
-      //   return <Resume />;
-      case 'Portfolio':
-        return <Portfolio />;
-      case 'Contact':
-        return <Contact />;
-      default:
-        return <About />;
-    }
-  };
+  const [ currentPage, setCurrentPage ] = useState('homepage');
 
+  let currentPageEl
   
-//   const [categories] = useState([
-//     {
-//         name: "About Me",
-//         description: " ",
-//     },
-//     {
-//         name: "Portfolio", 
-//         description: "Projects I have worked on",
-//     },
-//     {
-//         name: "Resume",
-//         description: " ",
-//     },
-// ]);
-
-// const [currentCategory, setCurrentCategory] = useState(categories[0]);
-const [currentCategory, handlePageChange] = useState();
-
+  switch (currentPage) {
+    case pages[1].id:
+      currentPageEl = (
+      <Portfolio />
+      )
+      break; 
+    case pages[2].id:
+      currentPageEl = (
+        <Resume />
+      )
+      break; 
+    case pages[3].id:
+      currentPageEl = (
+        <Contact />
+      )
+      break; 
+    case pages[0].id:
+      default: currentPageEl = (
+        <>
+          <About />
+        </>
+      )
+  }
 
   return (
-    <Router>
-    <div>
+    <>
       <Header
-        // categories={categories}
-        // setCurrentCategory={setCurrentCategory}
-        // currentCategory={currentCategory}
-        // contactSelected={contactSelected}
-        // setContactSelected={setContactSelected}
-        // aboutSelected={aboutSelected}
-        // setAboutSelected={setAboutSelected}
-        // handlePageChange={handlePageChange}
-      ></Header>
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
       <main>
-        <Switch>
-          <Route exact path="/" component={About} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/contact" component={Contact} />
-          {/* <Route exact path="/resume" component={Resume} /> */}
-          <div>{renderPage(currentCategory)}</div>
-        </Switch>
+        {currentPageEl}
       </main>
       <Footer/>
-    </div>
-    </Router>
+    </>
   );
 }
 
