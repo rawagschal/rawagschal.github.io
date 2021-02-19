@@ -5,22 +5,22 @@ function Portfolio() {
 
     const projects = [
          {
-          name: 'Notetakr',
-          description: 'Express.js',
-          deployedURL: 'https://arcane-wave-64105.herokuapp.com/',
-          githubURL: 'https://github.com/rawagschal/notetakr',
+          name: 'Book Search Engine',
+          description: 'A MERN app using Google Books API and GraphQL',
+          deployedURL: 'https://rawagschal-book-search.herokuapp.com/',
+          githubURL: 'https://github.com/rawagschal/book-search',
         },
         {
-          name: 'Spaced Out',
-          description: 'HTML/Bootstrap/JS',
-          deployedURL: 'https://rawagschal.github.io/spaced-out/',
-          githubURL: 'https://github.com/rawagschal/spaced-out',
+          name: 'Shop Shop',
+          description: 'An E-commerce MERN app with Redux',
+          deployedURL: 'https://arcane-ocean-82265.herokuapp.com/',
+          githubURL: 'https://github.com/rawagschal/shop-shop',
         },
         {
-          name: 'Petter Life',
-          description: 'MERN App',
-          deployedURL: 'https://a-petter-life.herokuapp.com/',
-          githubURL: 'https://github.com/ChrisMeissner/petter-life',
+          name: 'Budget Tracker',
+          description: 'A PWA using IndexedDB and a service worker',
+          deployedURL: 'https://vast-thicket-23542.herokuapp.com/',
+          githubURL: 'https://github.com/rawagschal/budget-tracker',
         }
     ];
 
