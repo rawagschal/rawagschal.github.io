@@ -27,11 +27,11 @@ function Header({ currentPage, setCurrentPage }) {
     
     return (
         <header className="header-conatiner">
-            <h2>
+            <h1>
                 <a href="/" className="site-title">
                     Rachel Wagschal
                 </a>
-            </h2>
+            </h1>
             <nav>
                 <ul className="nav-items">
                     {

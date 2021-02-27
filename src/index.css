@@ -1,26 +1,18 @@
-main {
-	max-width: 100%;
-  margin: 2rem .5rem;
-  display: flex;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
 
 :root {
-  --primary: #8AC926  ;
-  --secondary: #FFCA3A;
-  --tertiary: #FF595E;
-  --dark: #242423;
-  --bone: #fffcf2;
-  --width: 100%;
+  --bg-color-1: #fffcf2;
+  --bg-color-2: #242423;
+  --text-color-1: #242423;
+  --text-color-2: #fffcf2;
 }
 
-
 body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  line-height: 1.5;
-  color: var(--dark);
-  font-family: 'Roboto-Mono', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
+
+main {
+  margin: 1.5em;
 }
 
 h1,
@@ -28,50 +20,41 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: 'Roboto-Mono', sans-serif;
-  margin: 5px 0;
+h6,
+p {
+  margin: .5rem 0;
   line-height: 1.25;
-  font-weight: normal;
 }
 
-h1 {
+h1, h1 a {
   font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 1.75rem;
+  font-weight: 400;
 }
 
 h3 {
   font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.25rem;
-}
-
-h5 {
-  font-size: 1.15rem;
-}
-
-h6 {
-  font-size: 1rem;
+  font-weight: 400;
 }
 
 p {
-  font-size: 1.1rem;
-  margin: 0 .5em;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 
 a {
-  color: var(--primary);
+  color: var(--text-color-1);
   text-decoration: none;
-  font-weight: normal;
+  font-weight: 200;
 }
 
 a:hover {
-  text-decoration: line-through ;
+  font-weight: 500; ;
 }
 
 header {
@@ -93,16 +76,19 @@ ul.footer-items {
 }
 
 .nav-items li, .footer-items li {
-  margin: .5rem
+  margin: .5rem;
+  font-weight: 200;
+  font-style: italic;
+  text-transform: lowercase;
 }
 
 .nav-items li:hover {
-  text-decoration: line-through;
+  font-weight: 500;
   cursor: pointer;
 }
 
 .nav-items li.active {
-  color: var(--primary);
+  font-weight: 500;
 }
 
 /* ABOUT SECTION */
@@ -157,14 +143,15 @@ span[role="img"] {
   align-items: center;
 }
 
-.image-container {
+/* .image-container {
   max-width: 200px;
-  max-height: 200px;
-}
+  max-height: auto;
+} */
 
 .project-img {
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
+  
 }
 
 .project-footer {
