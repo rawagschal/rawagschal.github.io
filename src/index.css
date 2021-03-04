@@ -29,7 +29,8 @@ p {
 h1, h1 a {
   font-size: 2rem;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 700;
+  font-style: italic;
 }
 
 h2 {
@@ -103,7 +104,7 @@ ul.footer-items {
 }
 
 .about-img {
-  max-width: 25%;
+  min-width: .25em;
 }
 
 span[role="img"] {
