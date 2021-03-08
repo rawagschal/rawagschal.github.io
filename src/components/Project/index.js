@@ -17,8 +17,8 @@ function Project({ name, description, deployedURL, githubURL, imgFile }) {
                 />
             </div>
             <div className="project-footer">
-                <a href={deployedURL} className="deployed-link">App</a>
-                <a href={githubURL} className="repo-link">Github Repository</a>
+                <a href={deployedURL} className="deployed-link" target="blank">App</a>
+                <a href={githubURL} className="repo-link" target="blank">Github Repository</a>
             </div>
         </div>
     )
