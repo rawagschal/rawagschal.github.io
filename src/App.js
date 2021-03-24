@@ -45,8 +45,9 @@ function App() {
       />
       <main>
         {currentPageEl}
+        <Footer/>
       </main>
-      <Footer/>
+      
     </>
   );
 }

@@ -1,43 +1,49 @@
-import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
+import React from 'react';
+// import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-    const { name, email, message } = formState;
-    const [errorMessage, setErrorMessage] = useState('');
+    // const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    // const { name, email, message } = formState;
+    // const [errorMessage, setErrorMessage] = useState('');
 
-    function handleChange(e) {
-        if (e.target.name === 'email') {
-            const isValid = validateEmail(e.target.value);
-            console.log(isValid);
-            // isValid conditional statement
-            if (!isValid) {
-                setErrorMessage('Your email is invalid.');
-            } else {
-                setErrorMessage('');
-            } 
-            } else {
-                if (!e.target.value.length) {
-                    setErrorMessage(`${e.target.name} is required.`);
-                } else {
-                    setErrorMessage('');
-                }
-        }
-        if (!errorMessage) {
-            setFormState({...formState, [e.target.name]: e.target.value });
-        }
-        console.log('errorMessage', errorMessage);
-    }
+    // function handleChange(e) {
+    //     if (e.target.name === 'email') {
+    //         const isValid = validateEmail(e.target.value);
+    //         console.log(isValid);
+    //         // isValid conditional statement
+    //         if (!isValid) {
+    //             setErrorMessage('Your email is invalid.');
+    //         } else {
+    //             setErrorMessage('');
+    //         } 
+    //         } else {
+    //             if (!e.target.value.length) {
+    //                 setErrorMessage(`${e.target.name} is required.`);
+    //             } else {
+    //                 setErrorMessage('');
+    //             }
+    //     }
+    //     if (!errorMessage) {
+    //         setFormState({...formState, [e.target.name]: e.target.value });
+    //     }
+    //     console.log('errorMessage', errorMessage);
+    // }
 
-    function handleSubmit(e) {
-        e.preventDefault();
-        console.log(formState);
-    }
+    // function handleSubmit(e) {
+    //     e.preventDefault();
+    //     console.log(formState);
+    // }
 
     return (
         <section className="contact-container">
-            <h1>Contact Me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
+            <h2>Let's Connect</h2>
+            <ul className="contact-info">
+                <li> email: 
+                    <a href="mailto:rawagschal@gmail.com"> rawagschal@gmail.com </a>
+                </li>
+                <li> mobile: 949-395-0489 </li>
+            </ul>
+            {/* <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
                     <input type="text" defaultValue={name} onBlur={handleChange} name="name"  />
@@ -56,7 +62,7 @@ function Contact() {
                     </div>
                 )}
                 <button type="submit">Submit</button>
-            </form>
+            </form> */}
         </section>
     );
 }

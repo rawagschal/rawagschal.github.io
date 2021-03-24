@@ -27,9 +27,10 @@ function Header({ currentPage, setCurrentPage }) {
     
     return (
         <header className="header-conatiner">
-            <h1>
+            <h1 className="site-title-container">
                 <a href="/" className="site-title">
-                    Rachel Wagschal
+                    RACHEL WAGSCHAL
+                    {/* <img className="site-title" src={require(`../../assets/vector/logo.png`).default} alt="RACHEL WAGSCHAL"/>  */}
                 </a>
             </h1>
             <nav>

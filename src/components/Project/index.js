@@ -1,7 +1,7 @@
 import React from 'react';
           
 // passing in necessary props from projects objects
-function Project({ name, description, deployedURL, githubURL, imgFile }) {
+function Project({ name, description, deployedURL, githubURL, imgFile, index }) {
     return (     
         <div className="project-container">
             <div className="project-header">

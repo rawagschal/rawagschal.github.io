@@ -11,6 +11,7 @@ function Portfolio() {
           deployedURL: 'https://rawagschal-book-search.herokuapp.com/',
           githubURL: 'https://github.com/rawagschal/book-search',
           imgFile: 'book-search.png',
+          index: 'grid-item-a'
         },
         {
           name: 'Shop Shop',
@@ -18,6 +19,7 @@ function Portfolio() {
           deployedURL: 'https://arcane-ocean-82265.herokuapp.com/',
           githubURL: 'https://github.com/rawagschal/shop-shop',
           imgFile: 'shop-shop.png',
+          index: 'grid-item-b'
         },
         {
           name: 'Budget Tracker',
@@ -25,6 +27,7 @@ function Portfolio() {
           deployedURL: 'https://vast-thicket-23542.herokuapp.com/',
           githubURL: 'https://github.com/rawagschal/budget-tracker',
           imgFile: 'budget-tracker.png',
+          index: 'grid-item-c'
         }
     ];
 
@@ -37,7 +40,7 @@ function Portfolio() {
         
             <div className="grid-container">
                 { projects.map((project) => (
-                    <Project key={project.name} {...project} />
+                    <Project key={project.name} {...project}/>
                 ))}
             </div>
         </section>
