@@ -3,7 +3,7 @@ import React from 'react';
 // passing in necessary props from projects objects
 function Project({ name, description, deployedURL, githubURL, imgFile, index }) {
     return (     
-        <div className="project-container">
+        <div className={index}>
             <div className="project-header">
                 <h3 className="project-title">{name}</h3>
                 <p className="project-description">{description}</p>
