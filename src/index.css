@@ -1,16 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
 
 :root {
-  --bg-color-1: #fffcf2;
-  --bg-color-2: #242423;
-  --text-color-1: #242423;
-  --text-color-2: #fffcf2;
- 
+  --bg-1: #f1f1e8;
+  --bg-2: #242423;
+  --text-1: #242423;
+  --text-2: #fffcf2;
 }
 
 body {
   font-family: 'Roboto Mono', monospace;
+  background: var(--bg-1);
+  margin: 3%;
 }
+
+nav {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-items: space-between;
+  padding-bottom: 3%;
+  background-color: #f1f1e890;
+}
+
+.navbar-brand {
+  flex: 0 1 auto;
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 3 1 auto;
+  text-transform: lowercase;
+}
+
+.nav-link {
+  margin: 1em; 
+}
+
+.nav-link.active {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.navigation-wrap {
+  display: flex;
+  margin-right: -20px;
+}
+
+/* nav {
+  display: flex;
+  position: relative;
+  float: right;
+} */
+
+/* a.active {
+  font-weight: 400;
+  font-style: italic;
+
+} */
 
 main {
   margin: 1.5em;
@@ -50,25 +100,22 @@ p {
 }
 
 a {
-  color: var(--text-color-1);
+  display: block;
+  /* transition-property: opacity;
+  transition-duration: 200ms;
+  transition-timing-function: ease; */
+  color: var(--text-1);
   text-decoration: none;
   font-weight: 200;
 }
 
-a:hover, a h1:hover {
+a:hover, a h1:hover, a:active {
   font-weight: 500; ;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin: 2rem 4rem;
-}
-
-footer {
+/* footer {
   position: 
-}
+} */
 
 ul {
   display: flex;
@@ -180,7 +227,7 @@ span[role="img"] {
   margin: 3vh 0;
 }
 
-button {
+/* button {
   font-size: 1rem;
   text-decoration: none;
   padding: 0.25rem 1rem;
@@ -190,7 +237,7 @@ button {
   cursor: pointer;
   margin: 0 1px;
   background-color: var(--tertiary);
-}
+} */
 
 button:hover {
   opacity: .8;
@@ -339,7 +386,7 @@ textarea {
 	margin-bottom: 25px;
 }
 
-button {
+/* button {
 	background: var(--primary);
 	border: 0;
 	border-radius: 5px;
@@ -349,7 +396,7 @@ button {
 	font-weight: 600;
 	margin-bottom: 30px;
 	padding: 10px 15px;	
-}
+} */
 
 
 
