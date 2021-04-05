@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// import Jumbotron from 'react-bootstrap/Jumbotron';
 import Navbar, { pages } from './components/Navbar';
 import About from './components/About';
 import Resume from './components/Resume';
@@ -43,11 +44,14 @@ function App() {
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
       />
-      <main>
-        {currentPageEl}
-      
-        <Footer/>
-      </main>
+      <section>
+        <container>
+          <div className="section-wrap">
+            {currentPageEl}
+          </div>
+        </container>
+      </section>
+      <Footer/>
     </>
   );
 }

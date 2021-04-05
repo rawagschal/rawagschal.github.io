@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+@import "bootstrap/dist/css/bootstrap.min.css";
 
 :root {
   --bg-1: #f1f1e8;
@@ -10,16 +11,53 @@
 body {
   font-family: 'Roboto Mono', monospace;
   background: var(--bg-1);
-  margin: 3%;
 }
 
-nav {
+/* FONTS */
+
+h1 {
+  line-height: 2em;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.75em;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+a {
+  display: block;
+  color: var(--text-1);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+a:hover {
+  color: var(--text-1);
+}
+
+/* NAV */
+
+.navbar {
   position: sticky;
   top: 0px;
   display: flex;
-  justify-items: space-between;
-  padding-bottom: 3%;
-  background-color: #f1f1e890;
+  align-content: center;
+  justify-content: space-between;
+  padding: 3%;
+  background-color: #f1f1e8;
 }
 
 .navbar-brand {
@@ -50,68 +88,43 @@ nav {
   margin-right: -20px;
 }
 
-/* nav {
+/* MAIN SECTION */
+
+section {
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.section-wrap {
   display: flex;
-  position: relative;
-  float: right;
-} */
-
-/* a.active {
-  font-weight: 400;
-  font-style: italic;
-
-} */
-
-main {
-  margin: 1.5em;
+  flex-direction: row-reverse;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  justify-content: space-around;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: .5rem 0;
-  line-height: 1.25;
+/* ABOUT SECTION */
+
+.intro-text {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  /* object-fit: fill; */
+  justify-content: space-around;
 }
 
-h1, h1 a {
-  font-size: 4rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-style: italic;
-}
-
-h2 {
-  font-size: 1.75rem;
-  font-weight: 400;
-}
-
-h3 {
+.intro-text a {
   font-size: 1.5rem;
-  font-weight: 400;
+  text-decoration: underline;
 }
 
-p {
-  font-size: 1.5rem;
-  font-weight: 200;
+.img-fluid {
+  max-width: 30%;
 }
 
-a {
-  display: block;
-  /* transition-property: opacity;
-  transition-duration: 200ms;
-  transition-timing-function: ease; */
-  color: var(--text-1);
-  text-decoration: none;
-  font-weight: 200;
-}
 
-a:hover, a h1:hover, a:active {
-  font-weight: 500; ;
-}
+
 
 /* footer {
   position: 
@@ -147,24 +160,6 @@ ul.footer-items {
 
 .site-title-container {
   margin: 0;
-}
-/* ABOUT SECTION */
-
-.about-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.about-col-1 {
-  max-width: 70%;
-}
-
-.about-img {
-  min-width: .25em;
-}
-
-span[role="img"] {
-  cursor: default;
 }
 
 /* PORTFOLIO SECTION */
