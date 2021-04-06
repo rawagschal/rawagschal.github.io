@@ -4,23 +4,22 @@ import React from 'react';
 function Footer() {
     return (
         <footer>
-            <ul className="footer-items">
-                <li>
+            <div className="footer-links">
+                
                     <a href="https://github.com/rawagschal" target="_blank" rel="noreferrer">
                     Github
                     </a>
-                </li>
-                <li>
+                
+                
                     <a href="https://www.linkedin.com/in/rachelwag" target="_blank" rel="noreferrer">
                     Linkedin
                     </a>
-                </li>
-                <li>
+                
+                
                     <a href="https://stackoverflow.com/users/14019495/rachel-wagschal" target="_blank" rel="noreferrer">
                     Stack Overflow
                     </a>
-                </li>
-            </ul>
+            </div>
         </footer>
     )
 }
