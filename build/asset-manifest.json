@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.8e1d8751.chunk.css",
-    "main.js": "/static/js/main.9590bb6d.chunk.js",
-    "main.js.map": "/static/js/main.9590bb6d.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.9d5d1593.js",
-    "runtime-main.js.map": "/static/js/runtime-main.9d5d1593.js.map",
-    "static/js/2.c77ad54b.chunk.js": "/static/js/2.c77ad54b.chunk.js",
-    "static/js/2.c77ad54b.chunk.js.map": "/static/js/2.c77ad54b.chunk.js.map",
-    "static/js/3.3a534b1a.chunk.js": "/static/js/3.3a534b1a.chunk.js",
-    "static/js/3.3a534b1a.chunk.js.map": "/static/js/3.3a534b1a.chunk.js.map",
+    "main.css": "/static/css/main.f4348c76.chunk.css",
+    "main.js": "/static/js/main.c19a521d.chunk.js",
+    "main.js.map": "/static/js/main.c19a521d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c2429778.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c2429778.js.map",
+    "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
+    "static/js/2.34c26270.chunk.js": "/static/js/2.34c26270.chunk.js",
+    "static/js/2.34c26270.chunk.js.map": "/static/js/2.34c26270.chunk.js.map",
+    "static/js/3.553f706c.chunk.js": "/static/js/3.553f706c.chunk.js",
+    "static/js/3.553f706c.chunk.js.map": "/static/js/3.553f706c.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.8e1d8751.chunk.css.map": "/static/css/main.8e1d8751.chunk.css.map",
-    "static/js/2.c77ad54b.chunk.js.LICENSE.txt": "/static/js/2.c77ad54b.chunk.js.LICENSE.txt",
+    "static/css/2.150d169a.chunk.css.map": "/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.f4348c76.chunk.css.map": "/static/css/main.f4348c76.chunk.css.map",
+    "static/js/2.34c26270.chunk.js.LICENSE.txt": "/static/js/2.34c26270.chunk.js.LICENSE.txt",
     "static/media/RWagschal_resume.b58f1026.pdf": "/static/media/RWagschal_resume.b58f1026.pdf",
     "static/media/about-me.caea5d9c.jpg": "/static/media/about-me.caea5d9c.jpg",
     "static/media/book-search.png": "/static/media/book-search.62030518.png",
@@ -19,9 +21,10 @@
     "static/media/shop-shop.png": "/static/media/shop-shop.e52ed3c5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9d5d1593.js",
-    "static/js/2.c77ad54b.chunk.js",
-    "static/css/main.8e1d8751.chunk.css",
-    "static/js/main.9590bb6d.chunk.js"
+    "static/js/runtime-main.c2429778.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.34c26270.chunk.js",
+    "static/css/main.f4348c76.chunk.css",
+    "static/js/main.c19a521d.chunk.js"
   ]
 }

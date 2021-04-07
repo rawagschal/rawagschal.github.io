@@ -44,13 +44,11 @@ function App() {
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
       />
-      <section>
-        <container>
-          <div className="section-wrap">
+      <main>
+        <section id="page-content">
             {currentPageEl}
-          </div>
-        </container>
-      </section>
+        </section>
+      </main>
       <Footer/>
     </>
   );

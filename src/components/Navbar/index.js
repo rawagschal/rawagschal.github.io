@@ -33,7 +33,6 @@ function AppNavbar({ currentPage, setCurrentPage }) {
                 <Navbar.Brand href="/">
                     RACHEL WAGSCHAL
                 </Navbar.Brand>
-                {/* future dev: responsive toggle */}
                 <Nav>
                     {
                         pages.map((page) => (
