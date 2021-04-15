@@ -5,27 +5,27 @@ import { Row, Col, Image } from 'react-bootstrap';
 function Project() {
         const projects = [
          {
-          name: 'Book Search Engine',
-          description: 'A MERN app using Google Books API and GraphQL',
-          deployedURL: 'https://rawagschal-book-search.herokuapp.com/',
-          githubURL: 'https://github.com/rawagschal/book-search',
-          imgFile: 'book-search.png',
+          name: 'Spaced Out',
+          description: 'A destination for all us nerds that want to see the happenings in space.',
+          deployedURL: 'https://rawagschal.github.io/spaced-out/',
+          githubURL: 'https://github.com/rawagschal/spaced-out',
+          imgFile: 'spaced-out.png',
           index: 'grid-item-a'
         },
         {
-          name: 'Shop Shop',
-          description: 'An E-commerce MERN app with Redux',
-          deployedURL: 'https://arcane-ocean-82265.herokuapp.com/',
-          githubURL: 'https://github.com/rawagschal/shop-shop',
-          imgFile: 'shop-shop.png',
+          name: 'Petter Life',
+          description: 'An application to connect unhoused pets with loving homes.',
+          deployedURL: 'https://a-petter-life.herokuapp.com/',
+          githubURL: 'https://github.com/rawagschal/petter-life',
+          imgFile: 'petter-life.png',
           index: 'grid-item-b'
         },
         {
-          name: 'Budget Tracker',
-          description: 'A PWA using IndexedDB and a service worker',
-          deployedURL: 'https://vast-thicket-23542.herokuapp.com/',
-          githubURL: 'https://github.com/rawagschal/budget-tracker',
-          imgFile: 'budget-tracker.png',
+          name: 'Shop Shop',
+          description: 'An online ecommerce store for all of your shopping needs.',
+          deployedURL: 'https://rwagschal-shop-shop.herokuapp.com/',
+          githubURL: 'https://github.com/rawagschal/shop-shop',
+          imgFile: 'shop-shop.png',
           index: 'grid-item-c'
         }
     ];

@@ -173,15 +173,30 @@ main {
   margin-right: 10%;
 }
 
-/* CONTACT SECTION */
-.contact-info {
-  display: block;
+/* RESUME + CONTACT */
+.resume-container, .contact-container {
+  width: 100%;
 }
+
+.resume-container h2 {
+  display: flex;
+}
+
+.resume-container a {
+  text-decoration: underline;
+}
+
+/* CONTACT SECTION */
+/* .contact-info {
+  display: flex;
+  flex-direction: column;
+} */
 
 .contact-info li {
-  margin: 3vh 0;
+  display:flex;
+  margin-bottom: 2rem;
+  
 }
-
 /* button {
   font-size: 1rem;
   text-decoration: none;
