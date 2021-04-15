@@ -30,7 +30,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
@@ -100,7 +100,7 @@ a:hover {
 /* FOOTER */
 
 footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -178,8 +178,17 @@ main {
   width: 100%;
 }
 
-.resume-container h2 {
+#services {
+  flex: auto;
+}
+
+#services li {
+  list-style: circle;
+}
+
+.resume-container h3 {
   display: flex;
+  margin-top: 5%;
 }
 
 .resume-container a {
@@ -187,14 +196,10 @@ main {
 }
 
 /* CONTACT SECTION */
-/* .contact-info {
-  display: flex;
-  flex-direction: column;
-} */
 
 .contact-info li {
   display:flex;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   
 }
 /* button {

@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ce4a13a.chunk.css",
-    "main.js": "/static/js/main.b7e428e9.chunk.js",
-    "main.js.map": "/static/js/main.b7e428e9.chunk.js.map",
+    "main.css": "/static/css/main.019f7e00.chunk.css",
+    "main.js": "/static/js/main.c4fa44d7.chunk.js",
+    "main.js.map": "/static/js/main.c4fa44d7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5bb0a221.js",
     "runtime-main.js.map": "/static/js/runtime-main.5bb0a221.js.map",
     "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
@@ -12,19 +12,19 @@
     "static/js/3.f97c5fdd.chunk.js.map": "/static/js/3.f97c5fdd.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.150d169a.chunk.css.map": "/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.4ce4a13a.chunk.css.map": "/static/css/main.4ce4a13a.chunk.css.map",
+    "static/css/main.019f7e00.chunk.css.map": "/static/css/main.019f7e00.chunk.css.map",
     "static/js/2.b44a5c2a.chunk.js.LICENSE.txt": "/static/js/2.b44a5c2a.chunk.js.LICENSE.txt",
     "static/media/RWagschal_resume.b58f1026.pdf": "/static/media/RWagschal_resume.b58f1026.pdf",
     "static/media/about-me.caea5d9c.jpg": "/static/media/about-me.caea5d9c.jpg",
-    "static/media/book-search.png": "/static/media/book-search.62030518.png",
-    "static/media/budget-tracker.png": "/static/media/budget-tracker.fccc9130.png",
-    "static/media/shop-shop.png": "/static/media/shop-shop.e52ed3c5.png"
+    "static/media/petter-life.png": "/static/media/petter-life.5515f6e2.png",
+    "static/media/shop-shop.png": "/static/media/shop-shop.fccc9130.png",
+    "static/media/spaced-out.png": "/static/media/spaced-out.62a0e8f2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5bb0a221.js",
     "static/css/2.150d169a.chunk.css",
     "static/js/2.b44a5c2a.chunk.js",
-    "static/css/main.4ce4a13a.chunk.css",
-    "static/js/main.b7e428e9.chunk.js"
+    "static/css/main.019f7e00.chunk.css",
+    "static/js/main.c4fa44d7.chunk.js"
   ]
 }
