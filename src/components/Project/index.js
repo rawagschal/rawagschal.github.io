@@ -21,11 +21,11 @@ function Project() {
           index: 'grid-item-b'
         },
         {
-          name: 'Shop Shop',
-          description: 'An online ecommerce store for all of your shopping needs.',
-          deployedURL: 'https://rwagschal-shop-shop.herokuapp.com/',
-          githubURL: 'https://github.com/rawagschal/shop-shop',
-          imgFile: 'shop-shop.png',
+          name: 'Wantings',
+          description: 'An online ecommerce store for beautiful antique home goods.',
+          deployedURL: 'https://warm-crag-68291.herokuapp.com/',
+          githubURL: 'https://github.com/rawagschal/wantings',
+          imgFile: 'wantings.png',
           index: 'grid-item-c'
         }
     ];
