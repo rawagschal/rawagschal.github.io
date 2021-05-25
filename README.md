@@ -1,38 +1,18 @@
-# My Portfolio but make it React
+# React Portfolio
 
-## Description
+My [professional portfolio](https://rawagschal.github.io/) bulit with React.js.
 
-A portfolio bootstrapped with React
-
-## Table of Contents
-
-* [License](#license)
-* [Usage](#usage)
-* [Credits](#credits)
-* [Contributions](#contributions)
-* [Tests](#tests)
-
-
-## License
+<img src="./src/assets/img/screenshot.png" alt="Screenshot of Portfolio"/>
     
 [![license badge](https://img.shields.io/static/v1?label=license&message=MIT&color=important)](https://opensource.org/licenses/MIT)
 
-## Usage
+## Features
 
-Visit my portfolio [here](https://rawagschal.github.io)
-
-## Credits
-
-Made by Rachel Wagschal
+* About Me
+* Contact Information
+* Resume and Overview of Skills
+* Portfolio of Live Sites
 
 ## Contributions
 
-Fork it and use it as a template!
-
-## Tests
-
-Write your own tests, I dare you
-
-## Contact
-
-Questions, comments, or conerns? Find me on [GitHub](https://github.com/rawagschal/) or [send me an email](mailto:rawagschal@gmail.com).
+Would love to hear your feedback and suggestions! [Send me an email](mailto:rawagschal@gmail.com) or [open an issue on the repository](https://github.com/rawagschal/rawagschal.github.io/issues).
