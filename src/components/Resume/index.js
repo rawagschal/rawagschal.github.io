@@ -5,17 +5,31 @@ function Resume() {
     return(
         <section id="container-fluid" class="resume-container">
             <div id="services">
-                <h2>What I can do for you:</h2>
-                <ul>
-                    <li>web application development</li>
-                    <li>application prototypes</li>
-                    <li>custom Squarespace sites</li>
-                    <li>custom Webflow sites</li>
-                </ul>
+                <h2>Technologies I use include:</h2>
+                <p className="services-list">
+                    <ul className="services-list-items">
+                    HTML • 
+                    CSS • 
+                    JS •
+                    Git • 
+                    MERN Stack • 
+                    LAMP Stack •
+                    GraphQL • 
+                    Apollo •
+                    MongoDB •
+                    REST •
+                    Jest • 
+                    Heroku • 
+                    p5.js •
+                    Adobe Suite •
+                    Webflow •
+                    Figma
+                    </ul>
+                </p>
             </div>
-            <div id="contact-info">
-                <h3>Click&nbsp;<a href={resume} target="blank"> here </a>&nbsp;to download a copy of my resume
-                </h3>
+            <div className='resume-pdf'>
+                <p>Click <a href={resume} target="blank">here</a> to download a copy of my resume
+                </p>
             </div>
         </section>
     )

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 :root {
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto', sans-serif;
   background: var(--bg-1);
   display: flex;
   flex-direction: column;
@@ -30,12 +30,12 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1em;
   font-weight: 200;
 }
 
@@ -140,6 +140,15 @@ main {
   justify-content: space-around;
 }
 
+.intro-text ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul  {
+  padding-left: 0px;
+}
+
 .intro-text a {
   font-size: 1.5rem;
   text-decoration: underline;
@@ -151,6 +160,8 @@ main {
 
 .img-fluid {
   max-width: 30%;
+  width: auto;
+  height: 30%;
 }
 
 /* PORTFOLIO SECTION */
@@ -175,24 +186,35 @@ main {
 
 /* RESUME + CONTACT */
 .resume-container, .contact-container {
-  width: 100%;
+  width: 75%;
 }
 
 #services {
-  flex: auto;
+text-align:center;
+}
+
+#services ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* text-align:center; */
 }
 
 #services li {
-  list-style: circle;
+  padding-right: 20px;
 }
 
-.resume-container h3 {
-  display: flex;
+.resume-pdf p {
+  text-align: center;
+}
+
+.resume-container p {
   margin-top: 5%;
+  text-align: center;
 }
 
 .resume-container a {
   text-decoration: underline;
+  display:inline;
 }
 
 /* CONTACT SECTION */
@@ -371,13 +393,13 @@ textarea {
 
 /* media queries */
 
-/* tablet */
+/* tablet
 @media screen and (max-width: 1420px) {
 
 }
 
 /* phone lg */
-@media screen and (max-width: 425px) {
+/* @media screen and (max-width: 425px) {
   header {
     display: block;
   }
@@ -407,9 +429,4 @@ textarea {
     font-size: 1em;
   }
 
-}
-
-/* phone sm */
-@media screen and (max-width: 360px) {
-  
-}
+} */

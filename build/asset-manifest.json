@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.28b52347.chunk.css",
-    "main.js": "/static/js/main.99be5b2b.chunk.js",
-    "main.js.map": "/static/js/main.99be5b2b.chunk.js.map",
+    "main.js": "/static/js/main.d96ea816.chunk.js",
+    "main.js.map": "/static/js/main.d96ea816.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.5bb0a221.js",
     "runtime-main.js.map": "/static/js/runtime-main.5bb0a221.js.map",
     "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
@@ -16,15 +16,15 @@
     "static/js/2.b44a5c2a.chunk.js.LICENSE.txt": "/static/js/2.b44a5c2a.chunk.js.LICENSE.txt",
     "static/media/RWagschal_resume.b58f1026.pdf": "/static/media/RWagschal_resume.b58f1026.pdf",
     "static/media/about-me.caea5d9c.jpg": "/static/media/about-me.caea5d9c.jpg",
-    "static/media/petter-life.png": "/static/media/petter-life.5515f6e2.png",
-    "static/media/shop-shop.png": "/static/media/shop-shop.fccc9130.png",
-    "static/media/spaced-out.png": "/static/media/spaced-out.62a0e8f2.png"
+    "static/media/petter-life.png": "/static/media/petter-life.7171d062.png",
+    "static/media/spaced-out.png": "/static/media/spaced-out.62a0e8f2.png",
+    "static/media/wantings.png": "/static/media/wantings.5a554018.png"
   },
   "entrypoints": [
     "static/js/runtime-main.5bb0a221.js",
     "static/css/2.150d169a.chunk.css",
     "static/js/2.b44a5c2a.chunk.js",
     "static/css/main.28b52347.chunk.css",
-    "static/js/main.99be5b2b.chunk.js"
+    "static/js/main.d96ea816.chunk.js"
   ]
 }

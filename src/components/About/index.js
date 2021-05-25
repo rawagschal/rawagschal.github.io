@@ -8,8 +8,18 @@ function About() {
         <>
             <div className="intro-text">
                 <h2> 
-                    Creative coder, web developer, and proponent of the oxford comma. 
+                   Curious creative on a journey to build accesible and beautiful human experiences on the web.
                 </h2>
+                <p className="interests">
+                    <ul className="interests-list">
+                        <li>Front End Web Development</li>
+                        <span className="bullet">•</span>
+                        <li>Web Design</li>
+                        <span className="bullet">•</span>
+                        <li>Creative Technology</li>
+                    </ul>
+
+                </p>
                 <a href="mailto:rawagschal@gmail.com">Let's make something together.</a>
             </div>
                 
