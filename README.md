@@ -2,7 +2,7 @@
 
 My [professional portfolio](https://rawagschal.github.io/) bulit with React.js and React Bootstrap.
 
-<img src="./src/assets/img/screenshot.png" alt="Screenshot of Portfolio"/>
+<img src="./public/screenshot.png" alt="Screenshot of Portfolio"/>
     
 [![license badge](https://img.shields.io/static/v1?label=license&message=MIT&color=important)](https://opensource.org/licenses/MIT)
 
