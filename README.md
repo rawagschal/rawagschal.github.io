@@ -1,6 +1,6 @@
 # React Portfolio
 
-My [professional portfolio](https://rawagschal.github.io/) bulit with React.js.
+My [professional portfolio](https://rawagschal.github.io/) bulit with React.js and React Bootstrap.
 
 <img src="./src/assets/img/screenshot.png" alt="Screenshot of Portfolio"/>
     
