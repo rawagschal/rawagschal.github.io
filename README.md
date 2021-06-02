@@ -1,6 +1,6 @@
 # React Portfolio
 
-My [professional portfolio](https://rawagschal.github.io/) built with React.
+My [professional portfolio](https://rawagschal.github.io/) built with React and React-Bootstrap.
     
 [![license badge](https://img.shields.io/static/v1?label=license&message=MIT&color=important)](https://opensource.org/licenses/MIT)
 
