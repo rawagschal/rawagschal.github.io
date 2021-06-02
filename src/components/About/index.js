@@ -10,7 +10,7 @@ function About() {
                 <h2> 
                    Curious creative on a journey to build accesible and beautiful human experiences on the web.
                 </h2>
-                <p className="interests">
+                <h3 className="interests">
                     <ul className="interests-list">
                         <li>Front End Web Development</li>
                         <span className="bullet">•</span>
@@ -18,9 +18,7 @@ function About() {
                         <span className="bullet">•</span>
                         <li>Creative Technology</li>
                     </ul>
-
-                </p>
-                <a href="mailto:rawagschal@gmail.com">Let's make something together.</a>
+                </h3>
             </div>
                 
             <Image src={aboutImage} roundedCircle fluid />

@@ -149,15 +149,6 @@ ul  {
   padding-left: 0px;
 }
 
-.intro-text a {
-  font-size: 1.5rem;
-  text-decoration: underline;
-}
-
-.intro-text a:hover {
-  color: #242423;
-}
-
 .img-fluid {
   max-width: 30%;
   width: auto;
